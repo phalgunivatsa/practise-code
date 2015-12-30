@@ -1,0 +1,88 @@
+package com.yash.servlet.listener;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.util.Properties;
+
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.mysql.jdbc.Statement;
+import com.yash.servlet.util.ConnectionProvider;
+
+@WebServlet("/LoginServlet")
+public class LoginServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	
+	PrintWriter printWriter = response.getWriter();
+
+	protected void doGet(HttpServletRequest request,
+			HttpServletResponse response) throws ServletException, IOException {
+		
+		response.setContentType("text/html");
+		Properties properties = (Properties) getServletContext().getAttribute(
+				"properties");
+		printWriter.println("<html>");
+		printWriter.println("<body>");
+		printWriter.println("<form method='get'>");
+		printWriter.println("<table>");
+		printWriter.println("<tr>");
+		printWriter.println("<td>");
+		printWriter.println(properties.getProperty("customer.id"));
+		printWriter.println("</td>");
+		printWriter.println("<td>");
+		printWriter.println("<input type='text' name ='id'>");
+		printWriter.println("</td>");
+		printWriter.println("</tr>");
+		printWriter.println("<tr>");
+		printWriter.println("<td>");
+		printWriter.println(properties.getProperty("customer.password"));
+		printWriter.println("</td>");
+		printWriter.println("<td>");
+		printWriter.println("<input type='text' name ='password'>");
+		printWriter.println("</td>");
+		printWriter.println("</tr>");
+		printWriter.println("<tr>");
+		printWriter.println("<td><input type='submit' value='Register'>");
+		printWriter.println("</td>");
+		printWriter.println("</tr>");
+		printWriter.println("</table>");
+		printWriter.println("</form>");
+		printWriter.println("</body>");
+		printWriter.println("</html>");
+	}
+	
+	
+	 try {
+		 
+         Connection connection = ConnectionProvider.getConnection();
+         String username = request.getParameter("id");
+         String password = request.getParameter("password");
+   
+         String query1 = "SELECT * FROM LOGINLISTENER";
+         Statement statement = (Statement) connection.createStatement();
+         ResultSet resultSet = statement.executeQuery(query1);
+         while (resultSet.next()) {
+             String userid = resultSet.getString(1);
+             String pass = resultSet.getString(2);
+             if ((username.equals(userid))) {
+                 printWriter.println("WELCOME USER");
+             } 
+             else {
+                 printWriter.println("INVALID USERNAME OR PASSWORD");
+             }
+         }
+         
+
+     } catch (Exception ex) {
+         System.out.println("error is" + ex.getMessage());
+     }
+}
+}
+

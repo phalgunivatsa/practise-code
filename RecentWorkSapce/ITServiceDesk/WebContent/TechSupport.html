@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Technical Support</title>
+</head>
+<body>
+	<form method="post" action="TechSupportServlet">
+		<table>
+			<tr>
+				<td colspan="2">
+					<h3>TECH SUPPORT</h3>
+				</td>
+			</tr>
+			<tr>
+				<td>User Id:</td>
+				<td><input type="text" name="userId" /></td>
+			</tr>
+			<tr>
+				<td>Software:</td>
+				<td><select name="Software">
+						<option value="Eclipse">Eclipse</option>
+						<option value="MediaPlayer">MediaPlayer</option>
+						<option value="Mysql">MySQL</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td>Operating System:</td>
+				<td><select name="operatingsystem">
+						<option value="windows7">Windows7</option>
+						<option value="linux">Linux</option>
+						<option value="iOS">iOS</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td>Description</td>
+				<td><textarea name="description"></textarea></td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="submit" value="Submit"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

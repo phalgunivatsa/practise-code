@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="jquery-ui.js"></script>
+	
+		
+	<script>
+	$(document).ready(function(){
+		$(function() {
+			$("#datepicker").datepicker();
+		});
+	});
+	</script>
+</h:head>
+<h:body>
+	<center>
+	<h:form>
+		<table>
+			<tr>
+				<td>Name</td>
+				<td><h:inputText id="name" value="#{employeeBean.name}"
+						required="true" /> <h:message for="name"
+						style="color:red" /></td>
+			</tr>
+			<tr>
+				<td>Contact</td>
+				<td><h:inputText id="contact" value="#{employeeBean.contact}"
+						required="true" label="contact" /> <h:message for="contact"
+						style="color:red" /></td>
+			</tr>
+			<tr>
+				<td>Gender</td>
+				<td><h:selectOneRadio id="gender"
+						value="#{employeeBean.gender}" required="true">
+						<f:selectItem itemValue="Male" itemLabel="Male" />
+						<f:selectItem itemValue="Female" itemLabel="Female" />
+					</h:selectOneRadio> <h:message for="gender" style="color:red" /></td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td><h:inputText id="email" value="#{employeeBean.email}"
+						required="true" label="email" /> <h:message for="email"
+						style="color:red" /></td>
+			</tr>
+			<tr>
+				<td>Address</td>
+				<td><h:inputTextarea rows="5" cols="30" id="address"
+						value="#{employeeBean.address}" /></td>
+			</tr>
+			<tr>
+				<td>DOB</td>
+				<td><p>
+						Date: <input type="text" id="datepicker" />
+					</p></td>
+			</tr>
+			<tr>
+				<td>Years Of Experience</td>
+				<td><h:selectOneMenu value="#{employeeBean.yearsOfExperience}">
+						<f:selectItem itemValue="1" itemLabel="1" />
+						<f:selectItem itemValue="2" itemLabel="2" />
+						<f:selectItem itemValue="3" itemLabel="3" />
+						<f:selectItem itemValue="4" itemLabel="4" />
+						<f:selectItem itemValue="5" itemLabel="5" />
+					</h:selectOneMenu></td>
+			</tr>
+			<tr>
+				<td>Technologies Known</td>
+				<td><h:selectManyCheckbox
+						value="#{employeeBean.technologiesKnown}">
+						<f:selectItem itemValue="Core Java" itemLabel="Core Java" />
+						<f:selectItem itemValue="Servlet" itemLabel="Servlet" />
+						<f:selectItem itemValue="JSF" itemLabel="JSF" />
+						<f:selectItem itemValue="jQuery" itemLabel="jQuery" />
+					</h:selectManyCheckbox></td>
+			</tr>
+			<tr>
+				<td><h:selectBooleanCheckbox id="terms"
+						value="#{employeeBean.terms}"></h:selectBooleanCheckbox>I accept
+					the terms and conditions.</td>
+			</tr>
+			<tr>
+				<center><td><h:commandButton type="submit" value="Save"
+						action="#{employeeBean.addUser}" /></td>
+				<td><h:commandButton type="reset" value="Reset" /></td></center>
+			</tr>
+		</table>
+	</h:form>
+	</center>
+</h:body>
+</html>

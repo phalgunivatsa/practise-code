@@ -1,0 +1,85 @@
+!SESSION 2015-10-21 12:22:06.960 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-10-21 12:22:37.175
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-10-21 12:22:37.175
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\phalguni.vatsa'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2015-10-21 12:23:44.757
+!MESSAGE Invalid thread access
+!STACK 0
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4397)
+	at org.eclipse.swt.SWT.error(SWT.java:4312)
+	at org.eclipse.swt.SWT.error(SWT.java:4283)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:472)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:363)
+	at org.eclipse.swt.widgets.Button.setSelection(Button.java:1047)
+	at org.eclipse.jst.j2ee.internal.ui.WtpUserLibraryProviderInstallPanel$2.propertyChanged(WtpUserLibraryProviderInstallPanel.java:71)
+	at org.eclipse.jst.common.project.facet.core.libprov.internal.PropertiesHost.notifyListeners(PropertiesHost.java:104)
+	at org.eclipse.jst.common.project.facet.core.libprov.LibraryProviderOperationConfig.notifyListeners(LibraryProviderOperationConfig.java:150)
+	at org.eclipse.jst.j2ee.internal.common.classpath.WtpUserLibraryProviderInstallOperationConfig.setIncludeWithApplicationEnabled(WtpUserLibraryProviderInstallOperationConfig.java:142)
+	at org.eclipse.jst.j2ee.internal.common.classpath.WtpUserLibraryProviderInstallOperationConfig$1.handleEvent(WtpUserLibraryProviderInstallOperationConfig.java:125)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.notifyListeners(FacetedProjectWorkingCopy.java:1752)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.resumeEventNotification(FacetedProjectWorkingCopy.java:1797)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectWorkingCopy.setProjectFacets(FacetedProjectWorkingCopy.java:784)
+	at org.eclipse.wst.web.ui.internal.wizards.NewProjectDataModelFacetWizard.setRuntimeAndDefaultFacets(NewProjectDataModelFacetWizard.java:261)
+	at org.eclipse.wst.web.ui.internal.wizards.NewProjectDataModelFacetWizard$2.propertyChanged(NewProjectDataModelFacetWizard.java:217)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelImpl.notifyListeners(DataModelImpl.java:347)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelImpl.notifyPropertyChange(DataModelImpl.java:338)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelImpl.internalSetProperty(DataModelImpl.java:183)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelImpl.setProperty(DataModelImpl.java:172)
+	at org.eclipse.wst.web.ui.internal.wizards.DataModelFacetCreationWizardPage$5.run(DataModelFacetCreationWizardPage.java:459)
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2015-10-21 12:28:47.875
+!MESSAGE Several ports (8005, 8080, 8009) required by Tomcat v7.0 Server at localhost are already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2015-10-21 12:29:02.375
+!MESSAGE Several ports (8005, 8080, 8009) required by Tomcat v7.0 Server at localhost are already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2015-10-21 12:29:16.813
+!MESSAGE Several ports (8005, 8080, 8009) required by Tomcat v7.0 Server at localhost are already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2015-10-21 12:29:59.230
+!MESSAGE Several ports (8005, 8080, 8009) required by Tomcat v7.0 Server at localhost are already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2015-10-21 12:30:16.415
+!MESSAGE Several ports (8005, 8080, 8009) required by Tomcat v7.0 Server at localhost are already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).
+!SESSION 2015-10-23 10:17:51.173 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-10-23 10:18:49.627
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-10-23 10:18:49.658
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\phalguni.vatsa'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.yash.jspservlet.domain.Employee"/>
+<fullyQualifiedTypeName name="com.yash.jspservlet.dao.CrudDao"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+<fullyQualifiedTypeName name="com.yash.jspservlet.service.CrudService"/>
+<fullyQualifiedTypeName name="com.yash.jspservlet.service.CrudServiceIntf"/>
+<fullyQualifiedTypeName name="com.yash.jspservlet.service.CrudServiceImpl"/>
+<fullyQualifiedTypeName name="java.sql.ResultSet"/>
+<fullyQualifiedTypeName name="com.yash.jspservlet.util.ConnectionProvider"/>
+<fullyQualifiedTypeName name="com.yash.comparator.NameComparator"/>
+<fullyQualifiedTypeName name="java.util.Comparator"/>
+<fullyQualifiedTypeName name="com.yash.comparable.Student"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.Collection"/>
+<fullyQualifiedTypeName name="java.util.Collections"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+</qualifiedTypeNameHistroy>

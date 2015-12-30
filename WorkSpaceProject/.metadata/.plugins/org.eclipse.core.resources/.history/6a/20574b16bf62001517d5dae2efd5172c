@@ -1,0 +1,32 @@
+package com.yash.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+import com.yash.domain.Account;
+import com.yash.util.ConnectionProvider;
+
+public class AccountDao {
+	public void viewBalance(int accountid){
+		Account account= new Account(); 
+		Connection connection= ConnectionProvider.getConnection();
+		String query= "SELECT * FROM ACCOUNT WHERE ACCOUNTID=?";
+		try {
+			PreparedStatement preparedStatement= connection.prepareStatement(query);
+			preparedStatement.setInt(1, accountid);
+			ResultSet resultSet= preparedStatement.executeQuery();
+			
+			while(resultSet.next()){
+				int id=resultSet.getInt("AccountID");
+					if(id==accountid){
+						resultSet.getInt(account.getAmount());
+					}
+			}
+			ConnectionProvider.close();
+			}
+		    catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+	}
+}

@@ -1,0 +1,40 @@
+package com.yash.jstl.domain;
+
+import javax.servlet.jsp.JspException;
+import javax.servlet.jsp.JspWriter;
+import javax.servlet.jsp.tagext.TagSupport;
+
+public class Customer extends TagSupport {
+	private String id;
+	private String name;
+	private String address;
+	
+	public void setId(String id) {
+		this.id = id;
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	
+	public int doStartTag() throws JspException {
+		try {
+			JspWriter out = pageContext.getOut();
+			out.println("Enter your email id:<id=" + id + ">");
+			out.println("Enter your name:<id=" + name + ">");
+			out.println("Enter your address:<id=" + address + ">");
+	
+			} catch (Exception ioException) {
+			System.err.println("IO Exception");
+			System.err.println("ioException.toString()");
+		}
+		return SKIP_BODY;
+	}
+
+
+	
+}

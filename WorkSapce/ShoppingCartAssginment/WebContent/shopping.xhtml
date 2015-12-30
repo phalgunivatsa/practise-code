@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="externalJquery.js"></script>
+	<script type="text/javascript" src="jquery-ui.js"></script>
+	<script type="text/javascript" src="jquery-ui.css"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<title>Shopping</title>
+	<link rel="stylesheet" type="text/css" href="Style.css" />
+	<style>
+#dialog {
+	background: #b9cd6d;
+	border: 1px solid #b9cd6d;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+</style>
+
+</h:head>
+<h:body>
+	<div id="header">
+		<h:commandButton type="submit" value="Cart" action="#{shoppingCartBean.displayCart}" />
+		<center>
+		<h1>Welcome: phalguni</h1>
+		</center>
+		<div id="logout">
+			<h:commandButton type="submit" value="Logout" action="#{shoppingCartBean.logout}" />
+		</div>
+	</div>
+
+	<div id="navigation">
+		<center>
+		<div id="mensButton">
+			<h:commandButton type="submit" value="Men" />
+		</div>
+		</center>
+		<br /> <br /> <br />
+		<center>
+		<div id="womensButton">
+			<h:commandButton type="submit" value="Women" />
+		</div>
+		</center>
+		<br /> <br /> <br />
+		<center>
+		<div id="kidsButton">
+			<h:commandButton type="submit" value="Kids" />
+		</div>
+		</center>
+	</div>
+
+
+	<div id="form">
+
+		<div id="mensProduct">
+			<div>
+				<table id="menProduct1">
+					<tr>
+						<td><h:graphicImage
+								value="https://onlineclothingshop.files.wordpress.com/2014/03/men-united-colors-of-benetton-shirts.jpg"
+								height="250px" width="200px" /></td>
+					</tr>
+					<tr>
+						<td>UCB:Casual Shirt</td>
+					</tr>
+					<tr>
+						<td>Price:Rs</td>
+					</tr>
+					<tr>
+						<td>1000</td>
+					</tr>
+					<tr>
+						<td><h:commandButton type="submit" class="addToCart"
+								value="Add to Cart" /></td>
+					</tr>
+				</table>
+			</div>
+
+			<div>
+				<table id="menProduct2">
+					<tr>
+						<td><h:graphicImage
+								value="http://peterengland.com/data/products/small/PSF31332345.jpg"
+								height="250px" width="200px" /></td>
+					</tr>
+					<tr>
+						<td>UCB:Casual Shirt</td>
+					</tr>
+					<tr>
+						<td>Price:Rs</td>
+					</tr>					
+					<tr>
+						<td>1000</td>
+					</tr>
+					<tr>
+						<td><h:commandButton type="submit" class="addToCart"
+								value="Add to Cart" /></td>
+					</tr>
+				</table>
+			</div>
+			<div>
+				<table id="menProduct3">
+					<tr>
+						<td><h:graphicImage
+								value="http://static2.jassets.com/p/Monteil-26-Munero-Checked-Green-Casual-Shirt-6399-9777811-1-catalog.jpg"
+								height="250px" width="200px" /></td>
+					</tr>
+					<tr>
+						<td>UCB:Casual Shirt</td>
+					</tr>
+					<tr>
+						<td>Price:Rs</td>
+					</tr>					
+					<tr>
+						<td>1000</td>
+					</tr>
+					<tr>
+						<td><h:commandButton type="submit" class="addToCart"
+								value="Add to Cart" /></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+
+		<div id="dialog">
+			<h:form prependId="false">
+				<table border="0">
+
+					<tr>
+						<td>Product :</td>
+						<td><input type="text" name="nameOfProduct" id="product"
+							readonly="readonly" /></td>
+
+					</tr>
+
+					<tr>
+						<td>Price :</td>
+						<td><input type="text" name="priceOfProduct" id="price"
+							readonly="readonly" /></td>
+
+					</tr>
+
+					<tr>
+						<td>Quantity :</td>
+						<td><h:inputText name="quantityOfProduct" id="quantity"
+								value="#{shoppingCartBean.quantity}" /></td>
+					</tr>
+					<tr>
+						<td>Total Cost :</td>
+						<td><h:inputText name="totalCostOfProduct" id="totalCost"
+								value="#{shoppingCartBean.totalCost}" /></td>
+					</tr>
+					<tr>
+						<td colspan="2" align="center"><h:commandButton type="submit"
+								id="addProduct" value="Add"
+								action="#{shoppingCartBean.addProductToCart}" /></td>
+
+					</tr>
+				</table>
+			</h:form>
+		</div>
+
+		<div id="womensProduct">
+			<div>
+				<table id="womenProduct1">
+					<tr>
+						<td><h:graphicImage
+								value="http://img5a.flixcart.com/image/sari/d/y/c/2440-a-chirag-sarees-275x275-imae4f9rbkzdqy2h.jpeg"
+								height="250px" width="200px" /></td>
+					</tr>
+					<tr>
+						<td>Biba:Saree</td>
+					</tr>
+					<tr>
+						<td>Price:Rs</td>
+					</tr>
+					<tr>
+						<td>1000</td>
+					</tr>
+					<tr>
+						<td><h:commandButton type="submit" class="addToCart"
+								value="Add to Cart" /></td>
+					</tr>
+				</table>
+			</div>
+			<div>
+				<table id="womenProduct2">
+					<tr>
+						<td><h:graphicImage
+								value="http://static2.shop.indiatimes.com/images/products/additional/original/B2114770_View_1/fashion/sarees/ishin-pink-poly-silk-saree-stcs-25.jpg"
+								height="250px" width="200px" /></td>
+					</tr>
+					<tr>
+						<td>W:Saree</td>
+					</tr>
+					<tr>
+						<td>Price:Rs</td>
+					</tr>					
+					<tr>
+						<td>1000</td>
+					</tr>
+					<tr>
+						<td><h:commandButton type="submit" class="addToCart"
+								value="Add to Cart" /></td>
+					</tr>
+				</table>
+			</div>
+			<div>
+				<table id="womenProduct3">
+					<tr>
+						<td><h:graphicImage
+								value="http://images.voonik.com/7154612/sukuma-orange-faux-georgette-saree-product.jpg?1434469616"
+								height="250px" width="200px" /></td>
+					</tr>
+					<tr>
+						<td>Milan:Saree</td>
+					</tr>
+					<tr>
+						<td>Price:Rs</td>
+					</tr>
+					<tr>
+						<td>1000</td>
+					</tr>
+					<tr>
+						<td><h:commandButton type="submit" class="addToCart"
+								value="Add to Cart" /></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+
+
+
+		<div id="kidsProduct">
+			<div>
+				<table id="kidsProduct1">
+					<tr>
+						<td><h:graphicImage
+								value="http://www.landybridal.co/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/b/l/blue-3-buttons-kids-formal-wear-dspp0010-a.jpg"
+								height="250px" width="200px" /></td>
+					</tr>
+					<tr>
+						<td>Giny and Johny</td>
+					</tr>
+					<tr>
+						<td>Price:Rs</td>
+					</tr>
+					<tr>
+						<td>1000</td>
+					</tr>
+					<tr>
+						<td><h:commandButton type="submit" class="addToCart"
+								value="Add to Cart" /></td>
+					</tr>
+				</table>
+			</div>
+			<div>
+				<table id="kidsProduct2">
+					<tr>
+						<td><h:graphicImage
+								value="http://g01.a.alicdn.com/kf/HTB1JHLOIVXXXXcLaXXXq6xXFXXXu/free-shipping-4pcs-lot-cotton-dress-girls-cotton-clothing-font-b-kids-b-font-clothes-children.jpg"
+								height="250px" width="200px" /></td>
+					</tr>
+					<tr>
+						<td>UCB</td>
+					</tr>
+					<tr>
+						<td>Price:Rs</td>
+					</tr>
+					<tr>
+						<td>1000</td>
+					</tr>
+					<tr>
+						<td><h:commandButton type="submit" class="addToCart"
+								value="Add to Cart" /></td>
+					</tr>
+				</table>
+			</div>
+			<div>
+				<table id="kidsProduct3">
+					<tr>
+						<td><h:graphicImage
+								value="http://cdn3.volusion.com/cqbu7.4qsby/v/vspfiles/photos/932-SL-2.jpg?1444629701"
+								height="250px" width="200px" /></td>
+					</tr>
+					<tr>
+						<td>Mom and Me</td>
+					</tr>
+					<tr>
+						<td>Price:Rs</td>
+					</tr>
+					<tr>
+						<td>1000</td>
+					</tr>
+					<tr>
+						<td><h:commandButton type="submit" class="addToCart"
+								value="Add to Cart" /></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+
+	</div>
+
+
+
+
+
+
+
+
+</h:body>
+</html>

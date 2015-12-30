@@ -1,0 +1,23 @@
+#navigation{
+	float:left;
+	width:700px;
+	height:710px;
+	background-color: #ffff99;
+}
+#display{
+	float:right;
+	background-color: #ff9999;	
+	height:350px;
+	width:705px;
+	
+}
+#empForm{
+	float:right;
+	display:none;
+	height:700px;
+	width:705px;
+	background-color: #ffcc99;
+	display:none;
+}
+
+

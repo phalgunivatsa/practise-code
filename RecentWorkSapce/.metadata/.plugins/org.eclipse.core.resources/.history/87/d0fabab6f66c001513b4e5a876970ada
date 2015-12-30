@@ -1,0 +1,5 @@
+package com.yash.jstl.domain;
+
+public class Customer {
+
+}

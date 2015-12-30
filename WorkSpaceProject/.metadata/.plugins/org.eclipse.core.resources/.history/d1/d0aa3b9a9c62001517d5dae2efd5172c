@@ -1,0 +1,32 @@
+package com.yash.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import com.yash.domain.User;
+import com.yash.util.ConnectionProvider;
+
+public class UserDao {
+	/*public void login(User user) {
+			Connection connection = ConnectionProvider.getConnection();
+			PreparedStatement preparedstatement;
+	}*/
+	public void signup(User user) {
+			String query="INSERT INTO USER(NAME, USERNAME, PASSWORD)VALUES(?,?,?)";
+			Connection connection = ConnectionProvider.getConnection();
+			PreparedStatement preparedstatement;
+			try {
+				preparedstatement = connection.prepareStatement(query);
+
+				preparedstatement.setString(1, user.getName());
+				preparedstatement.setString(2, user.getUsername());
+				preparedstatement.setString(3, user.getPassword());
+
+				preparedstatement.executeUpdate();
+				ConnectionProvider.close();
+			} 
+			catch (Exception e) {
+				System.out.println(e.getMessage());
+			}
+	}
+}

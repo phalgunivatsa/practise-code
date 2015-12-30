@@ -1,0 +1,19 @@
+#header{
+	background-color:#add8e6;
+	height:60pxpx;
+	float:top;
+	padding:50px;
+}
+#form{
+	float:right;
+	background-color:#dcdcdc;
+	height:500px;
+	width:500px;
+
+}
+#navigation{
+	float:left;
+	height:500px;
+	width:907px;
+	background-color:#f08080;
+}

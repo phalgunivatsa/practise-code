@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<a href=".html">NewsHome</a><br/>
+<a href="Economics.html">Economics</a><br/>
+<a href="Politics.html">Politics</a><br/>
+<a href="Entertainment.html">Entertainment</a><br/>
+Enter Your Choice:<br/>
+<form action="NewsPersonalizeServlet">
+<select name="news">
+<option value="sports">Sports</option>
+<option value="economics">Economics</option>
+<option value="politics">Politics</option>
+<option value="entertainment">Entertainment</option>
+</select><br/>
+<input type="submit" value= "Personalize">
+ </form>
+</body>
+</html>

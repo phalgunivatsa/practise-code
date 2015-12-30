@@ -1,0 +1,16 @@
+package com.yash.debugdemo.test;
+
+public class Demo1 {
+
+	public void print(){
+		System.out.println("-------Print Method Called--------");
+		printSquare();
+	}
+	
+	public void printSquare(){
+		int i;
+		for(i=2; i<10; i++){
+			System.out.println("The square of " +i+ " is " +i*i);
+	}
+}
+}

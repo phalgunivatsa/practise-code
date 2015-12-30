@@ -1,0 +1,11 @@
+package com.yash.debugdemo.test;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		
+		Demo1 object = new Demo1();
+		object.print();
+	}
+
+}

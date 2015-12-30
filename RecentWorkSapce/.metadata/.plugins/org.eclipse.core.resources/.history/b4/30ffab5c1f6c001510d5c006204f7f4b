@@ -1,0 +1,22 @@
+package com.yash.jsp.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+import com.yash.jsp.domain.Customer;
+import com.yash.jsp.util.ConnectionProvider;
+
+public class CustomerDao {
+	Connection connection= ConnectionProvider.getConnection();
+	Customer customer;
+	public Customer fetchById(){
+		String query="SELECT * FROM CUSTOMER WHERE ID='?'";
+		
+		return customer;	
+	}
+}
+	
+					
+					

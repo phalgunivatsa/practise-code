@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<title>Login-app jQuery</title>
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$('#show').click(function(){
+				$('loginContainer').show(2000);
+				$('#show').text("double click here to hide the form");
+			});
+			$('#show').dblclick(function(){
+				$('loginContainer').show(2000);
+				$('#show').text("double click here to hide the form");
+			});
+			$('#username').focusIn
+		});
+		<style type="text/css">
+			.loginContainer{
+				width:500px;
+				height:100px;
+				background:"slategray"
+				border:2px solid blue;
+				visibility:none;
+			}
+	</head>
+	<body>
+		<input type="button" value="click here to show input form" id="show"/><br/><br/>
+		<div class="loginContainer">
+		<form>
+			<table>
+				<tr>
+					<td>User name:</td>
+					<td><input type="text" name="txtUserName" id="username"/></td>
+				</tr>
+				<tr>
+					<td>Password:</td>
+					<td><input type="password" name="txtPasssword" id="password"/></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="right"><input type="submit" name="login" value="login"></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><span class="">test msg</td>
+				</tr>
+		</form>
+		</div>
+	</body>
+</html>

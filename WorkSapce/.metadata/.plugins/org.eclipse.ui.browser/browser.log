@@ -1,0 +1,28 @@
+
+Oct 09, 2015 14:37:53.01 NEW SESSION
+Oct 09, 2015 14:37:53.01 1444381672968	addons.update-checker	WARN	Update manifest for {972ce4c6-7e08-4474-a285-3208198ce6fd} did not contain an updates property
+
+Oct 12, 2015 15:26:55.23 NEW SESSION
+Oct 12, 2015 15:26:55.23 1444643815219	addons.update-checker	WARN	Update manifest for {972ce4c6-7e08-4474-a285-3208198ce6fd} did not contain an updates property
+
+Oct 13, 2015 15:26:55.49 NEW SESSION
+Oct 13, 2015 15:26:55.49 1444730215495	addons.update-checker	WARN	Update manifest for {972ce4c6-7e08-4474-a285-3208198ce6fd} did not contain an updates property
+
+Oct 14, 2015 10:21:45.07 NEW SESSION
+Oct 14, 2015 10:21:45.07 console.warn: Asynchronous operation was aborted as selection changed.
+Oct 14, 2015 15:28:55.72 1444816735695	addons.update-checker	WARN	Update manifest for {972ce4c6-7e08-4474-a285-3208198ce6fd} did not contain an updates property
+
+Oct 15, 2015 15:28:57.80 NEW SESSION
+Oct 15, 2015 15:28:57.80 1444903137810	addons.update-checker	WARN	Update manifest for {972ce4c6-7e08-4474-a285-3208198ce6fd} did not contain an updates property
+
+Oct 16, 2015 15:28:56.22 NEW SESSION
+Oct 16, 2015 15:28:56.22 1444989536013	addons.update-checker	WARN	Update manifest for {972ce4c6-7e08-4474-a285-3208198ce6fd} did not contain an updates property
+
+Oct 19, 2015 16:03:43.37 NEW SESSION
+Oct 19, 2015 16:03:43.37 1445250823328	addons.update-checker	WARN	Update manifest for {972ce4c6-7e08-4474-a285-3208198ce6fd} did not contain an updates property
+
+Oct 23, 2015 10:37:41.55 NEW SESSION
+Oct 23, 2015 10:37:41.55 1445576861397	addons.update-checker	WARN	Update manifest for {972ce4c6-7e08-4474-a285-3208198ce6fd} did not contain an updates property
+
+Oct 26, 2015 10:49:26.58 NEW SESSION
+Oct 26, 2015 10:49:26.58 1445836766579	addons.update-checker	WARN	Update manifest for {972ce4c6-7e08-4474-a285-3208198ce6fd} did not contain an updates property

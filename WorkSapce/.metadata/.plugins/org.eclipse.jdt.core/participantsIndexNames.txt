@@ -1,0 +1,19 @@
+INDEX VERSION 1.126
+C:\Users\phalguni.vatsa\WorkSapce\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\497608407.index
+\EnquiryManagementSystem\src
+C:\Users\phalguni.vatsa\WorkSapce\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1710873079.index
+\CDIPractise\src
+C:\Users\phalguni.vatsa\WorkSapce\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4157327092.index
+\EMS\src
+C:\Users\phalguni.vatsa\WorkSapce\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2243281993.index
+\EnquiryManagementSystem\src
+C:\Users\phalguni.vatsa\WorkSapce\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3857054418.index
+\EnquiryManagementSystem\src
+C:\Users\phalguni.vatsa\WorkSapce\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\25094418.index
+\CDIX\src
+C:\Users\phalguni.vatsa\WorkSapce\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1419502425.index
+\AjaxCore\src
+C:\Users\phalguni.vatsa\WorkSapce\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1581987515.index
+\Ajax\src
+C:\Users\phalguni.vatsa\WorkSapce\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3230530867.index
+\CDIPractise\src

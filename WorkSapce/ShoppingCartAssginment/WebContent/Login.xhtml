@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Login</title>
+<link rel="stylesheet" type="text/css" href="Style.css"/>
+</h:head>
+
+<h:body id="login">
+<center>
+	<h:form>
+		<table>
+			<tr>
+				<td>UserName:</td>
+				<td><h:inputText id="userName" value="#{customerBean.username}"/></td>
+			</tr>
+			<tr>
+				<td>Password:</td>
+				<td><h:inputSecret type="password" id="password" value="#{customerBean.password}"/></td>
+			</tr>
+			<tr>
+				<td><h:commandButton type="submit" id="register" value="Register" action="Register"/></td>
+				<td><h:commandButton type="submit" id="login" value="Login" action="#{customerBean.validateUser}"/></td>
+			</tr>
+		</table>
+	</h:form>
+</center>
+</h:body>
+
+</html>

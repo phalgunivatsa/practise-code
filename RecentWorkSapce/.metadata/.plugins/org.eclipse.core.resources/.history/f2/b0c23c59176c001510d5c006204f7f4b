@@ -1,0 +1,26 @@
+package com.yash.jsp.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+import com.yash.jsp.util.ConnectionProvider;
+
+public class CustomerDao {
+	Connection connection = ConnectionProvider.getConnection();
+	String query= "SELECT * FROM CUSTOMER WHERE ID=?";
+	
+	try {
+		Statement statement= connection.prepareStatement(query);
+		ResultSet resultSet=statement.executeQuery(query);
+		while(resultSet.next()){
+			String id= resultSet.getString(1);
+			if(id.equals(id)){
+				
+				
+			}else{
+				
+			}
+		}
+}

@@ -1,0 +1,86 @@
+#header{
+	background-color:#add8e6;
+	height:80px;
+	float:top;
+	padding:50px;
+}
+#form{
+	float:right;
+	background-color:#dcdcdc;
+	height:1003px;
+	width:1105.5px;
+
+}
+#navigation{
+	float:left;
+	height:1003px;
+	width:301.5px;
+	background-color:#f08080;
+}
+#male{
+	margin-top:150px;
+	height:50px;
+	width:200px;
+	background-color: #000000;
+}
+#female{
+	
+	height:50px;
+	width:200px;
+	background-color: #000000;
+}
+#kids{
+	
+	height:50px;
+	width:200px;
+	background-color: #000000;
+}
+#logout{
+	float:right;
+}
+#registrationBody{
+	
+	width=100%;
+	background-color: #FFEBCD;
+}
+#registrationForm{
+	height=1000px;
+	margin-top:200px;
+	background-color:#FFE4C4;
+}
+#login{
+	height=1000px;
+	margin-top:200px;
+	background-color:#CD5C5C ;
+}
+#dialog{
+	display: none;
+}
+#menProduct2{
+	float: left;
+}
+menProduct3{
+	float:left;
+}
+#menProduct1{
+	float:left;
+}
+#womenProduct2{
+	float: left;
+}
+#womenProduct3{
+	float:left;
+}
+#womenProduct1{
+	float:left;
+}
+#kidsProduct2{
+	
+	float: left;
+}
+#kidsProduct3{
+	float:left;
+}
+#kidsProduct1{
+	float:left;
+}

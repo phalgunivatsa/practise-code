@@ -1,0 +1,28 @@
+<taglib>
+	
+		<tlib-version>1.0</tlib-version>
+		<jsp-version>2.0</jsp-version>
+	
+		<tag>
+			<name></name>
+			<tag-class></tag-class>
+			<body-content></body-content>
+			
+			<attribute>
+					<name>id</name>
+					<rtexprvalue>true</rtexprvalue>
+					<required>true</required>	
+			</attribute>
+			<attribute>
+					<name>name</name>
+					<rtexprvalue>true</rtexprvalue>
+					<required>true</required>
+			</attribute>
+			<attribute>
+					<name>address</name>
+					<rtexprvalue>true</rtexprvalue>
+					<required>true</required>
+			</attribute>
+		</tag>
+
+</taglib>

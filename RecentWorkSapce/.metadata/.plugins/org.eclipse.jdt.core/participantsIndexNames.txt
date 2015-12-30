@@ -1,0 +1,7 @@
+INDEX VERSION 1.126
+C:\Users\phalguni.vatsa\WorkSapce\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\105383260.index
+\JSP\src
+C:\Users\phalguni.vatsa\WorkSapce\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2654840846.index
+\JSTL\src
+C:\Users\phalguni.vatsa\WorkSapce\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2286319862.index
+\JSTL\src

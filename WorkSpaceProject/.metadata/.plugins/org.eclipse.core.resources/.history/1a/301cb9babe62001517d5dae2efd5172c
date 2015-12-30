@@ -1,0 +1,29 @@
+package com.yash.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+import com.yash.domain.User;
+import com.yash.util.ConnectionProvider;
+
+public class AccountDao {
+	public void viewBalance(int userid){
+		User user=new User();
+		Connection connection= ConnectionProvider.getConnection();
+		String query= "SELECT * FROM ACCOUNT WHERE USERID=?";
+		try {
+			PreparedStatement preparedStatement= connection.prepareStatement(query);
+			preparedStatement.setInt(1, userid);
+			ResultSet resultSet= preparedStatement.executeQuery();
+			
+			while(resultSet.next()){
+				user.setUserid(resultSet.getString(1));
+			}
+			ConnectionProvider.close();
+			}
+		    catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+	}
+}

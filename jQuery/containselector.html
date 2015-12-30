@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>jQuery Testing</title>
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$(document).click(function(){
+				$("p:contains('Rahul')").fadein(3000);
+			});
+		});
+		</script>
+		<style type="text/css">
+			p{
+			display:none;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="submit value="show" id="show"/>
+		<p>101 yash rahul 90%</p>
+		<p>102 impetus rahul 80%</p>
+		<p>103 yash prakhar 50%</p>
+		<p>104 yash mohan 40%</p>
+	</body>
+</html>

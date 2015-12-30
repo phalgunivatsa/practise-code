@@ -1,0 +1,17 @@
+<html>
+	<head>
+		<title>jQuery Testing</title>
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$('h1:not(h1.no)').fadeOut(2000);
+			//$('h1:not(h1:eq(1)').fadeOut(2000));
+		});
+		</script>
+	</head>
+	<body>
+		<h1>this is 1st header</h1>
+		<h1 class="no">this is second header</h1>
+		<h1>this is third header</h1>
+	</body>
+</html>

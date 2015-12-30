@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form</title>
+<link rel="stylesheet" type="text/css" href="Style.css">
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$('#addfields').click(function(){
+				var field=prompt("Please enter the field you want to enter");
+					if(field!=null|| field!=""){
+						var type=prompt("Please enter the type of input");
+						if(type!=null||field!=""){
+						$('#addfields').append("<div>"+field+"<input type='"+type+"'name='text'><input type='button' class='remove' value='-'></div></center>");	
+						}
+					}
+				});
+			$('.remove').on("click",".remove", function(e){ 
+		         $(this).parent('div').remove();
+			});
+		
+			
+		});
+		
+			
+</script>
+</head>
+<body>
+
+	<div id="header">
+	<h1>Book Library</h1>
+	<a href="home.jsp">Home</a>
+	<a href="AboutUs.jsp">About Us</a>
+	<a href="Services.jsp">Services</a>
+	<a href="Contacts.jsp">Contacts</a>
+	</div>
+	
+	<div id="navigation">
+	Books plays an important role in in our life. Books are our friends in a real sense. 
+	They demand nothing from us. They give us plenty of joy. We also learn a lot from them.
+	They take us into a different world of imagination.
+	Good books improve our standard of living. They tone up our intellectual taste they make
+	 our outlook broad. They console us when we are depressed.
+	Books encourage us when we are defeated. They inspire us to work hard with hope and courage. 
+	They remove our ignorance and add to our knowledge. Books enrich our experience and sharpen
+	our intellect. Thus a good book is our true friend.A man must avoid reading bad books.
+	They may make our life miserable. We may have to suffer because of bad books. They develop
+	in us bad habits. They mislead and misguide. Bad books ruin our intellect. They spoil our
+	interest in reading good and serious books. We must avoid reading such bad and cheap books
+	because they waste our time and energy.We should develop a healthy habit of reading books.
+	We must select the books carefully. We should read only good books. Reading good books has 
+	many advantages. Bad books spoil our character. 
+	</div>
+	
+	<div id="form">
+	<div id="addfields"><input type="submit"  value="Add fields!"></div>
+	<center><div id="submit"><input type="submit" name="submit" value="Submit"></div></center>
+	</div>
+</body>
+</html>

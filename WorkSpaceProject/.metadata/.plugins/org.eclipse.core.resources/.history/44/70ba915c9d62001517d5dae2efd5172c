@@ -1,0 +1,61 @@
+package com.yash.presentation;
+
+import java.util.Scanner;
+
+import com.yash.dao.UserDao;
+import com.yash.domain.User;
+
+public class Presentation {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		do{
+		System.out.println("1. Enter 1 to Log in");
+		System.out.println("2. Enter 2 to SignUp");
+		System.out.println("3. Enter 3 to exit");
+		
+		int choice=scanner.nextInt();
+		
+			switch(choice){
+				case 1:{
+					System.out.println("Enter your userid");
+					String username=scanner.next();
+					
+					System.out.println("Enter your password");
+					String password=scanner.next();
+					
+					User user=new User();
+					user.setUsername(username);
+					user.setPassword(password);
+					
+					UserDao userdao=new UserDao();
+					user=userdao.login(username, password);
+				break;	
+				}
+				case 2:{
+					System.out.println("Enter your name");
+					String name=scanner.next();
+					
+					System.out.println("Enter your username");
+					String username=scanner.next();
+					
+					System.out.println("Enter your password");
+					String password=scanner.next();
+					
+					User user=new User();
+					user.setName(name);
+					user.setUsername(username);
+					user.setPassword(password);
+					
+					UserDao userdao=new UserDao();
+					userdao.signup(user);
+				break;
+				}
+				case 3:{
+					System.exit(0);
+				break;
+				}
+			}
+		}
+		while(true);
+	}
+}

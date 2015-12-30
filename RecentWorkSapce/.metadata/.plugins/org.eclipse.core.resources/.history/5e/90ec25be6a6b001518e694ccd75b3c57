@@ -1,0 +1,65 @@
+package com.yash.servlet.listener;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.util.Properties;
+
+import javax.servlet.ServletContext;
+import javax.servlet.ServletContextEvent;
+import javax.servlet.ServletContextListener;
+import javax.servlet.annotation.WebListener;
+@WebListener
+public class TestListener implements ServletContextListener{
+
+		Connection connection;
+	@Override
+	public void contextDestroyed(ServletContextEvent contextEvent) {
+		System.out.println("Connection Provider Listener---> contextDestroyed");
+	}
+
+	@Override
+	public void contextInitialized(ServletContextEvent contextEvent) {
+		
+		ServletContext context=contextEvent.getServletContext();
+		String driver=context.getInitParameter("driver");
+		String url=context.getInitParameter("url");
+		String username=context.getInitParameter("username");
+		String password=context.getInitParameter("password");
+		
+		try {
+			Class.forName(driver);
+			connection = DriverManager.getConnection(url,username,password);
+			
+		} catch (ClassNotFoundException | SQLException e) {
+			System.out.println(e.getMessage()); 
+		
+		String pathname=context.getInitParameter("pathname");	
+		FileReader fileReader;
+		try {
+			String pathname1=context.getInitParameter("pathname");	
+			String pathname=context.getRealPath(pathname1);
+			fileReader=new FileReader(pathname);
+			Properties properties= new Properties();
+			System.out.println(pathname);
+			
+			try {
+				properties.load(fileReader);
+				context.setAttribute("properties", properties);
+				System.out.println(properties.getProperty("title"));
+			} catch (IOException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+			
+		} catch (FileNotFoundException e1) {
+			System.out.println(e.getMessage());
+		}
+		
+		}
+	}
+
+}

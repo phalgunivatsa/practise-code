@@ -1,0 +1,86 @@
+package com.yash.presentation;
+
+import java.util.Scanner;
+
+import com.yash.dao.UserDao;
+import com.yash.domain.User;
+
+public class Presentation {
+	
+	public static void accountAccess(){
+
+		System.out.println("Enter 1. To See Account Detail:");
+		System.out.println("Enter 2. To See WithDraw:");
+		System.out.println("Enter 1. To See View Balance:");
+		System.out.println("Enter 1. To See Transfer:");
+
+		while(check!=0){
+			
+			switch(){
+			
+			
+			}
+			
+		}
+		
+	}
+	
+	public static void main(String[] args) {
+		int actcheck=0;
+		Scanner scanner = new Scanner(System.in);
+		do{
+		System.out.println("1. Enter 1 to Log in");
+		System.out.println("2. Enter 2 to SignUp");
+		System.out.println("3. Enter 3 to exit");
+		
+		int choice=scanner.nextInt();
+		
+			switch(choice){
+				case 1:{
+					System.out.println("Enter your userid");
+					String userid=scanner.next();
+					
+					System.out.println("Enter your password");
+					String password=scanner.next();
+					
+					User user=new User();
+					user.setUserid(userid);
+					user.setPassword(password);
+					
+					UserDao userdao=new UserDao();
+					actcheck=userdao.login(userid, password);
+					System.out.println("Welcome"+user.getName());
+					
+					if(actcheck==1){
+						accountAccess();
+					}
+				break;	
+				}
+				case 2:{
+					System.out.println("Enter your name");
+					String name=scanner.next();
+					
+					System.out.println("Enter your userid");
+					String userid=scanner.next();
+					
+					System.out.println("Enter your password");
+					String password=scanner.next();
+					
+					User user=new User();
+					user.setName(name);
+					user.setUserid(userid);
+					user.setPassword(password);
+					
+					UserDao userdao=new UserDao();
+					userdao.signup(user);
+				break;
+				}
+				case 3:{
+					System.exit(0);
+				break;
+				}
+			}
+		}
+		while(true);
+	}
+}

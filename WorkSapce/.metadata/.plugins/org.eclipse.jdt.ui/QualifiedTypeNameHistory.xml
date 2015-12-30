@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="javax.xml.registry.infomodel.User"/>
+<fullyQualifiedTypeName name="com.yash.ems.domain.User"/>
+<fullyQualifiedTypeName name="java.sql.Statement"/>
+<fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
+<fullyQualifiedTypeName name="javax.servlet.ServletContext"/>
+<fullyQualifiedTypeName name="com.yash.ems.util.ConnectionProvider"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="com.yash.ajax.domain.User"/>
+<fullyQualifiedTypeName name="org.jboss.weld.environment.se.WeldContainer"/>
+<fullyQualifiedTypeName name="org.jboss.weld.environment.se.Weld"/>
+<fullyQualifiedTypeName name="com.yash.cdi.domain.Employee"/>
+<fullyQualifiedTypeName name="javax.inject.Inject"/>
+<fullyQualifiedTypeName name="com.yash.cdi.dao.EmployeeDao"/>
+<fullyQualifiedTypeName name="com.yash.cdi.dao.EmployeeDaoImpl"/>
+<fullyQualifiedTypeName name="java.io.PrintWriter"/>
+<fullyQualifiedTypeName name="com.yash.jsfassignment.util.ConnectionProvider"/>
+<fullyQualifiedTypeName name="java.sql.SQLException"/>
+<fullyQualifiedTypeName name="com.yash.jsfel.domain.Address"/>
+<fullyQualifiedTypeName name="com.yash.sca.service.CustomerServiceIntf"/>
+<fullyQualifiedTypeName name="com.yash.sca.domain.Customer"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+<fullyQualifiedTypeName name="com.yash.sca.util.ConnectionProvider"/>
+<fullyQualifiedTypeName name="javax.faces.bean.ManagedBean"/>
+<fullyQualifiedTypeName name="javax.faces.bean.SessionScoped"/>
+<fullyQualifiedTypeName name="java.sql.ResultSet"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+<fullyQualifiedTypeName name="javax.faces.context.FacesContext"/>
+<fullyQualifiedTypeName name="com.yash.sca.beans.CustomerBean"/>
+<fullyQualifiedTypeName name="javax.ws.rs.Path"/>
+<fullyQualifiedTypeName name="com.yash.restfulweb.domain.User"/>
+<fullyQualifiedTypeName name="javax.ws.rs.GET"/>
+<fullyQualifiedTypeName name="javax.enterprise.inject.Produces"/>
+<fullyQualifiedTypeName name="javax.ws.rs.Produces"/>
+<fullyQualifiedTypeName name="javax.ws.rs.core.MediaType"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="AggregatorExample"/>
+</qualifiedTypeNameHistroy>

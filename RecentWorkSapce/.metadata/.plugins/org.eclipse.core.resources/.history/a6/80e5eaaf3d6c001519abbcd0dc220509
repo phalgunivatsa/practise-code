@@ -1,0 +1,53 @@
+package com.yash.jsp.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.yash.jsp.domain.Customer;
+import com.yash.jsp.util.ConnectionProvider;
+
+public class CustomerDao {
+	Connection connection= ConnectionProvider.getConnection();
+	List<Customer> customers=new ArrayList();
+	Customer customer;
+	public Customer fetchById(String id){
+		String query="SELECT * FROM CUSTOMER WHERE ID=?";
+		
+		try {
+			PreparedStatement preparedStatement=connection.prepareStatement(query);
+			ResultSet resultSet=preparedStatement.executeQuery(query);
+			preparedStatement.setString(1,id);
+			customer.setId(resultSet.getString("id"));
+			customer.setName(resultSet.getString("name"));
+			customer.setAddress(resultSet.getString("address"));
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			System.out.println(e.getMessage());
+		}
+		return customer;
+	}
+	public List<Customer> fetchAll(){
+		String query="SELECT * FROM CUSTOMER";
+		
+		try {
+			Statement statement = connection.prepareStatement(query);
+			ResultSet resultSet=statement.executeQuery(query);
+			while(resultSet.next()){
+				
+			}
+		} catch (SQLException e) {
+			System.out.println(e.getMessage());
+		}
+		
+		return customers;
+	}
+	
+}
+	
+					
+					
